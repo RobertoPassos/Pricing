@@ -15,7 +15,7 @@ with tab1:
     col1, col2 = st.columns([0.25, 0.75])
     
     with col1:
-        opcao_busca = st.radio("🔍 Buscar por:", ["EAN", "Marca", "Nome do SKU"], horizontal=True)
+        opcao_busca = st.radio("🔍 Buscar por:", ["EAN", "Marca", "Nome do Produto"], horizontal=True)
         desconto_sugerido = st.number_input("🔻 Desconto Sugerido (%)", min_value=0.0, max_value=100.0, value=10.0, step=0.5)
         df_ref_ind = load_reference_data(desconto_sugerido)
         

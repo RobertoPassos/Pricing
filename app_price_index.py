@@ -24,7 +24,7 @@ with tab1:
             filtro_selecionado = st.selectbox("Selecione o EAN", [""] + list(df_ref_ind["EAN"].unique()))
         elif opcao_busca == "Marca":
             filtro_selecionado = st.selectbox("Selecione a Marca", [""] + list(df_ref_ind["Marca"].unique()))
-        elif opcao_busca == "Nome do SKU":
+        elif opcao_busca == "Nome do Produto":
             filtro_selecionado = st.selectbox("Selecione o SKU", [""] + list(df_ref_ind["Nome do Produto"].unique()))
     
     df_filtrado = df_ref_ind.copy()

@@ -74,7 +74,7 @@ with tab2:
 
     st.write("### 📄 Price Index:")
     Price_Index = df_filtered["Price Index (%)"].mean()
-    st.write((f"{Price_Index:.2f}%"))
+    st.write((f"### {Price_Index:.2f}%"))
     
     st.write("### 📄 Comparação de Preços")
     st.dataframe(df_filtered.style.format({
